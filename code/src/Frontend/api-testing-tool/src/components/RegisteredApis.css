@@ -1,0 +1,134 @@
+/* RegisteredApis.css */
+.registered-apis-container {
+  padding: 40px;
+  font-family: 'Inter', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.registered-apis-header {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.registered-apis-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.registered-apis-header p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.registered-apis-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.registered-apis-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.registered-apis-table th,
+.registered-apis-table td {
+  padding: 12px;
+  border: 1px solid #444;
+  text-align: left;
+}
+
+.registered-apis-table th {
+  background: #2a2a2a;
+  font-weight: bold;
+}
+
+.registered-apis-table td {
+  background: #1e1e1e;
+}
+
+.registered-apis-details {
+  margin-top: 10px;
+  background: #2a2a2a;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.registered-apis-details summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.registered-apis-details pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin-top: 10px;
+  padding: 10px;
+  background: #1e1e1e;
+  border-radius: 4px;
+  max-height: 300px;
+  overflow: auto;
+}
+
+.api-registration-input-group select {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #2a2a2a;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.registered-apis-loading,
+.registered-apis-empty,
+.registered-apis-error {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+}
+
+.registered-apis-error {
+  color: #f44336;
+}
+
+.api-url {
+  word-break: break-all;
+  max-width: 300px;
+}
+
+.view-results-button {
+  padding: 0.5rem 1rem;
+  background: #0366d6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background 0.2s;
+}
+
+.view-results-button:hover {
+  background: #0356b6;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.status-badge.passed {
+  background: #dcffe4;
+  color: #22863a;
+}
+
+.status-badge.failed {
+  background: #ffdce0;
+  color: #cb2431;
+}
